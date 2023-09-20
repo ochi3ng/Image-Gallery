@@ -7,8 +7,6 @@ const ImageGallery = () => {
     const [images, setImages] = useState([]);
     const [filteredImages, setFilteredImages] = useState([]);
     const [loading, setLoading] = useState(true);
-    
-
 
     useEffect(() => {
         setTimeout(() => {
@@ -57,7 +55,7 @@ const ImageGallery = () => {
                 },
             ];
             setImages(dummyData);
-            setLoading(false);
+            
         }, 2000);
     }, []);
     const handleSearch = (searchTerm) => {
@@ -87,7 +85,7 @@ const ImageGallery = () => {
             <h2>Image Gallery</h2>
             <ImageSearch onSearch={handleSearch} />
       
-            {filteredImages.length < 2 ? (
+            {filteredImages.length<=0?  (
                 <div className="loader">Loading...</div>
             ) : (
                 <div className="image-grid">
