@@ -1,0 +1,73 @@
+.image-gallery {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+   background-image: url('https://cdn.pixabay.com/photo/2022/07/15/05/16/kenya-7322371_1280.jpg');
+    background-size: cover;
+    height: 100%vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.image-gallery h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.image-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.image-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-tag {
+  font-size: 20px;
+  margin-top: 10px;
+  color:white;
+}
+
+.loader {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+  color: red;
+
+}
+
+.image-search {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-search input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.image-search button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-search button:hover {
+  background-color: #0056b3;
+}
