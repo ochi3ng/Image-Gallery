@@ -85,7 +85,7 @@ const ImageGallery = () => {
             <h2>Image Gallery</h2>
             <ImageSearch onSearch={handleSearch} />
       
-            {filteredImages.length<1?  (
+            {loading?  (
                 <div className="loader">Loading...</div>
             ) : (
                 <div className="image-grid">

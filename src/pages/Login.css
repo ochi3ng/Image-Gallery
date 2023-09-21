@@ -21,6 +21,19 @@ background-image: url('https://cdn.pixabay.com/photo/2022/07/15/05/16/kenya-7322
   width: 100%;
   margin: 0 auto;
 }
+.please-signandlogin{
+  display: flex;
+margin-bottom: 2rem;
+
+}
+.please-login{
+  text-decoration: underline;
+  padding-left: 0.5rem;
+}
+.please-login:hover{
+  cursor: pointer;
+  color: #007bff;
+}
 
 .input {
   width: 100%;
